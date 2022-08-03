@@ -29,6 +29,13 @@ public class DirFileFinder {
             System.out.println("\t. = Empty tile \n\t# = Wall tile \n\tS = Start tile\n\tX = End tile");
             System.exit(0);
         } else {
+            System.out.println("List of viable files found in local directory: ");
+            for(String temp : txtFiles) {
+                System.out.println("\t"+temp);
+            }
+            for(String temp : bmpFiles) {
+                System.out.println("\t"+temp);
+            }
             System.out.println("Please input maze file name: ");
             while (true) {
                 String input = scanner.nextLine();

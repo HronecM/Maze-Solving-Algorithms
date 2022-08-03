@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/BitmapFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirFileFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/TextFile.java" afterDir="false" />
+    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1 - Locate File">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirAllBmp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirAllTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Solvers/AStar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Solvers/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Solvers/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Solvers/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirFileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirFileFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,11 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,8 +92,16 @@
       <option name="presentableId" value="Default" />
       <updated>1659516892832</updated>
       <workItem from="1659516895243" duration="6093000" />
-      <workItem from="1659527585591" duration="5203000" />
+      <workItem from="1659527585591" duration="11138000" />
     </task>
+    <task id="LOCAL-00001" summary="Ver 0.1 - Locate File">
+      <created>1659539716457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659539716457</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +117,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ver 0.1 - Locate File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1 - Locate File" />
   </component>
 </project>
