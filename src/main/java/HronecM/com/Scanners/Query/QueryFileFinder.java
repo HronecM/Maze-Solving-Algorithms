@@ -1,15 +1,14 @@
-package HronecM.com.Scanners;
+package HronecM.com.Scanners.Query;
 
 
 import java.io.File;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class DirFileFinder {
-    public static String dir(String directory) {
+public class QueryFileFinder {
+    public static String query(String directory) {
         Scanner scanner = new Scanner(System.in);
         List<String> txtFiles = new ArrayList<>();
         List<String> bmpFiles = new ArrayList<>();
