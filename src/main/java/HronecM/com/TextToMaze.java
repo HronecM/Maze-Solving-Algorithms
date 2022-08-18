@@ -7,10 +7,10 @@ import java.util.List;
 public class TextToMaze {
     public static List<char[][]> textFile(List<String> txtList) throws IOException {
         List<char[][]> mazes = new ArrayList<>();
-        String path, line;
+        String line;
         int row = 0, col = 0, temp;
-        for (String s : txtList) {
-            path = s;
+        for (String path : txtList){
+
             BufferedReader reader = new BufferedReader(new FileReader(path));
             while ((line = reader.readLine()) != null) {
                 temp = line.length();

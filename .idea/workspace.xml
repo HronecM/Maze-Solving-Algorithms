@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1.1 - Locate File + Select all of type">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/TextFileScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" afterDir="false" />
+    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1.1 - Scan mazes &#10;add:&#10;- non name detection to file selecting&#10;- move file to resources">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/BitmapFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirAllBmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllBmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirAllTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllTxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/DirFileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/TextFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
       <workItem from="1659637086259" duration="11836000" />
       <workItem from="1659697120319" duration="1981000" />
       <workItem from="1660229597781" duration="2762000" />
-      <workItem from="1660836790778" duration="718000" />
+      <workItem from="1660836790778" duration="9514000" />
     </task>
     <task id="LOCAL-00001" summary="Ver 0.1 - Locate File">
       <created>1659539716457</created>
@@ -100,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659549356923</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ver 0.1.1 - Scan mazes &#10;add:&#10;- non name detection to file selecting&#10;- move file to resources">
+      <created>1660839043784</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660839043784</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ver 0.1 - Locate File" />
     <MESSAGE value="Ver 0.1.1 - Locate File + Select all of type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1.1 - Locate File + Select all of type" />
+    <MESSAGE value="Ver 0.1.1 - Scan mazes &#10;add:&#10;- non name detection to file selecting&#10;- move file to resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1.1 - Scan mazes &#10;add:&#10;- non name detection to file selecting&#10;- move file to resources" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -129,12 +132,19 @@
           <properties class="java.io.IOException" package="java.io" />
           <option name="timeStamp" value="8" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="25" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="maze" />
       </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" line="27">
+        <watch expression="rgb" />
+      </inline-watch>
     </watches-manager>
   </component>
 </project>
