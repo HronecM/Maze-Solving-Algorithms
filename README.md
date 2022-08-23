@@ -6,7 +6,7 @@ Maze can be inputed through either a text file where:
 S = Start tile  
 X = End tile  
 
-Or through a Bitmap where: 
+Or through a Bitmap where:  
 black(0,0,0) = Wall tile  
 white(255,255,255) = Empty tile  
 red(1-254,0,0) = Start tile  
