@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File file;
         String temp;
-        String dir = System.getProperty("user.dir");
+        String dir = System.getProperty("user.dir") +"\\src\\main\\resources";
         List<String> txtList = new ArrayList<>();
         List<String> bmpList = new ArrayList<>();
         List<char[][]> mazes = new ArrayList<>();
