@@ -6,8 +6,13 @@ Maze can be inputed through either a text file where:
 S = Start tile  
 X = End tile  
 
-Or through a Bitmap with two empty spaces in the outerwalls which get assigned as Start and End randomly or through user input
-It is assumed that all input mazes are solvable  
+Or through a Bitmap where:  
+Black(0,0,0) = Wall tile  
+White(255,255,255) = Empty tile  
+Red(1-254,0,0) = Start tile  
+Green(0,1-254,0) = End tile   
+
+It is assumed all input mazes are solvable and have a single end and single start
 
 Credits:  
 John Songs [A Comparison of Pathfinding Algorithms](https://www.youtube.com/watch?v=GC-nBgi9r0U)  
