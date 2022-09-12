@@ -10,9 +10,7 @@ public class QueryAllTxt {
         List<String> txtFiles = new ArrayList<>();
         File dir = new File(directory);
         for (File file : Objects.requireNonNull(dir.listFiles())) {
-            if (file.getName().endsWith((".txt"))) {
-                txtFiles.add(file.getName());
-            }
+            if (file.getName().endsWith((".txt"))) txtFiles.add(file.getName());
         }
         return txtFiles;
     }

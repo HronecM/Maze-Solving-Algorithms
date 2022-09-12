@@ -10,9 +10,7 @@ public class QueryAllBmp {
         List<String> bmpFiles = new ArrayList<>();
         File dir = new File(directory);
         for (File file : Objects.requireNonNull(dir.listFiles())) {
-            if (file.getName().endsWith((".bmp"))) {
-                bmpFiles.add(file.getName());
-            }
+            if (file.getName().endsWith((".bmp"))) bmpFiles.add(file.getName());
         }
         return bmpFiles;
     }

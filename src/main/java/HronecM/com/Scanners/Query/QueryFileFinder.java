@@ -15,12 +15,8 @@ public class QueryFileFinder {
 
         File dir = new File(directory);
         for (File file : Objects.requireNonNull(dir.listFiles())) {
-            if (file.getName().endsWith((".bmp"))) {
-                bmpFiles.add(file.getName());
-            }
-            if (file.getName().endsWith((".txt"))) {
-                txtFiles.add(file.getName());
-            }
+            if (file.getName().endsWith((".bmp"))) bmpFiles.add(file.getName());
+            if (file.getName().endsWith((".txt"))) txtFiles.add(file.getName());
         }
         if (bmpFiles.isEmpty() & txtFiles.isEmpty()) {
             System.out.println("No viable maze file!");
@@ -32,9 +28,8 @@ public class QueryFileFinder {
         int val, tempVal = 0;
         int fileNum = bmpFiles.size() + txtFiles.size();
         for (val = 0; val < fileNum; val++) {
-            if (val < txtFiles.size()) {
-                System.out.println(val + 1 + ". " + txtFiles.get(val));
-            } else {
+            if (val < txtFiles.size()) System.out.println(val + 1 + ". " + txtFiles.get(val));
+            else {
                 System.out.println(val + 1 + ". " + bmpFiles.get(tempVal));
                 tempVal++;
             }
@@ -47,9 +42,8 @@ public class QueryFileFinder {
             int select = Integer.parseInt(input);
 
             if (input.matches("\\d+") && select <= val) {
-                if (select >= tempVal) {
-                    return bmpFiles.get((select - tempVal));
-                } else return txtFiles.get(select - 1);
+                if (select >= tempVal) return bmpFiles.get((select - tempVal));
+                else return txtFiles.get(select - 1);
             }
 
             if (!txtFiles.isEmpty()) {

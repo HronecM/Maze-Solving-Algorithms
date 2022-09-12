@@ -13,13 +13,10 @@ public class TextToMaze {
         String line;
         int row = 0, col = 0, temp;
         for (String path : txtList) {
-
             BufferedReader reader = new BufferedReader(new FileReader(path));
             while ((line = reader.readLine()) != null) {
                 temp = line.length();
-                if (col < temp || col == 0) {
-                    col = temp;
-                }
+                if (col < temp || col == 0) col = temp;
                 row++;
             }
 
