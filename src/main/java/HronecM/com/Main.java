@@ -1,5 +1,6 @@
 package HronecM.com;
 
+import HronecM.com.Objects.Maze;
 import HronecM.com.Scanners.Query.QueryAllBmp;
 import HronecM.com.Scanners.Query.QueryAllTxt;
 import HronecM.com.Scanners.Query.QueryFileFinder;
@@ -16,7 +17,7 @@ public class Main {
         String dir = System.getProperty("user.dir") +"\\src\\main\\resources";
         List<String> txtList = new ArrayList<>();
         List<String> bmpList = new ArrayList<>();
-        List<char[][]> mazes = new ArrayList<>();
+        List<Maze> mazes = new ArrayList<>();
 
         if (args.length == 0) {
             temp = QueryFileFinder.query(dir);

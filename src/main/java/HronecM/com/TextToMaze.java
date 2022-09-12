@@ -1,15 +1,18 @@
 package HronecM.com;
 
+import HronecM.com.Objects.Maze;
+
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TextToMaze {
-    public static List<char[][]> textFile(List<String> txtList) throws IOException {
-        List<char[][]> mazes = new ArrayList<>();
+    public static List<Maze> textFile(List<String> txtList) throws IOException {
+        List<Maze> mazes = new ArrayList<>();
         String line;
         int row = 0, col = 0, temp;
-        for (String path : txtList){
+        for (String path : txtList) {
 
             BufferedReader reader = new BufferedReader(new FileReader(path));
             while ((line = reader.readLine()) != null) {
@@ -21,14 +24,20 @@ public class TextToMaze {
             }
 
             reader = new BufferedReader(new FileReader(path));
-            char[][] maze = new char[row][col];
+            char[][] tempMaze = new char[row][col];
+            Maze maze = new Maze(tempMaze);
             int tempRow = 0, tempCol;
             while ((line = reader.readLine()) != null) {
-                for(tempCol = 0; tempCol < col; tempCol++){
-                    maze[tempRow][tempCol] = line.charAt(tempCol);
+                for (tempCol = 0; tempCol < col; tempCol++) {
+                    if (line.charAt(tempCol) == 'S') {
+                        Point point = new Point(tempRow, tempCol);
+                        maze.setStart(point);
+                    }
+                    tempMaze[tempRow][tempCol] = line.charAt(tempCol);
                 }
                 tempRow++;
             }
+            maze.setMaze(tempMaze);
             mazes.add(maze);
         }
         return mazes;

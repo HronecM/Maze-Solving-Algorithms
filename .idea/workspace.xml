@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1.1 - bitmap partial solve + num select&#10;add:&#10;- rework mazes to objects with start and end point&#10;- move file locating to resources">
+    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1.1 - move file locating to resources&#10;add:&#10;- rework mazes to objects with start and end point">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Objects/Maze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Objects/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,9 @@
       <workItem from="1660229597781" duration="2762000" />
       <workItem from="1660836790778" duration="10146000" />
       <workItem from="1661269530581" duration="340000" />
-      <workItem from="1661269882976" duration="379000" />
+      <workItem from="1661269882976" duration="5360000" />
+      <workItem from="1662975074585" duration="10096000" />
+      <workItem from="1663007021630" duration="1453000" />
     </task>
     <task id="LOCAL-00001" summary="Ver 0.1 - Locate File">
       <created>1659539716457</created>
@@ -108,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660864070228</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ver 0.1.1 - move file locating to resources&#10;add:&#10;- rework mazes to objects with start and end point">
+      <created>1661270359179</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661270359179</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +144,8 @@
     <MESSAGE value="Ver 0.1.1 - Locate File + Select all of type" />
     <MESSAGE value="Ver 0.1.1 - Scan mazes &#10;add:&#10;- non name detection to file selecting&#10;- move file to resources" />
     <MESSAGE value="Ver 0.1.1 - bitmap partial solve + num select&#10;add:&#10;- rework mazes to objects with start and end point" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1.1 - bitmap partial solve + num select&#10;add:&#10;- rework mazes to objects with start and end point" />
+    <MESSAGE value="Ver 0.1.1 - move file locating to resources&#10;add:&#10;- rework mazes to objects with start and end point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1.1 - move file locating to resources&#10;add:&#10;- rework mazes to objects with start and end point" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,8 +160,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HronecM/com/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="27" />
+          <line>38</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/HronecM/com/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
