@@ -34,7 +34,6 @@ public class Main {
             } else if (temp.contains("txt")) txtList.add(temp);
             else bmpList.add(temp);
         }
-
         if (!txtList.isEmpty()) mazes = TextToMaze.textFile(txtList);
         if (!bmpList.isEmpty()) mazes = BitmapToMaze.bitmapFile(bmpList);
 
