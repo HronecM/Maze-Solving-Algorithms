@@ -14,6 +14,7 @@ import java.util.List;
 public class BitmapToMaze {
     public static List<Maze> bitmapFile(List<String> bmpList) throws IOException {
         List<Maze> mazes = new ArrayList<>();
+        Maze maze;
         String dir = System.getProperty("user.dir") + "\\src\\main\\resources\\";
         BufferedImage img;
         for (String path : bmpList) {
@@ -21,9 +22,10 @@ public class BitmapToMaze {
             int height = img.getHeight();
             int width = img.getWidth();
             char[][] tempMaze = new char[height][width];
+            maze = new Maze(tempMaze);
 
             for (int h = 0; h < height; h++) {
-                Point start = null;
+
                 for (int w = 0; w < width; w++) {
                     int rgb = img.getRGB(w, h);
                     int red = (rgb >> 16) & 255;
@@ -31,17 +33,16 @@ public class BitmapToMaze {
                     int blue = (rgb) & 255;
 
                     if (red == 0 & green == 0 & blue == 0) tempMaze[h][w] = '#';
-                    else if (red > 0 & green == 0 & blue == 0) {
-                        start = new Point(w, h);
+                    else if (red > green && red>blue ) {
+                        maze.setStart(w, h);
                         tempMaze[h][w] = 'S';
-                    } else if (red == 0 & green > 0 & blue == 0) tempMaze[h][w] = 'X';
-                    else tempMaze[h][w] = '.';
+                    } else if (green > red && green > blue) {
+                        maze.setEnd(w, h);
+                        tempMaze[h][w] = 'X';
+                    } else tempMaze[h][w] = '.';
                 }
-
-                Maze maze = new Maze(tempMaze);
-                maze.setStart(start);
-                mazes.add(maze);
             }
+            mazes.add(maze);
         }
         return mazes;
     }

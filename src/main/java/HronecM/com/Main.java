@@ -4,6 +4,7 @@ import HronecM.com.Objects.Maze;
 import HronecM.com.Scanners.Query.QueryAllBmp;
 import HronecM.com.Scanners.Query.QueryAllTxt;
 import HronecM.com.Scanners.Query.QueryFileFinder;
+import HronecM.com.Visuals.SwingMain;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,7 +37,9 @@ public class Main {
         }
         if (!txtList.isEmpty()) mazes = TextToMaze.textFile(txtList);
         if (!bmpList.isEmpty()) mazes = BitmapToMaze.bitmapFile(bmpList);
+        System.out.println("Maze Grid created");
 
+        SwingMain.MazeMenu(mazes);
 
     }
 }

@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.1.1 - rework mazes to objects with start and end point&#10;add:&#10;- start working on visual display of maze solving">
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllBmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllBmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryAllTxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Scanners/Query/QueryFileFinder.java" afterDir="false" />
+    <list default="true" id="879c63ef-a583-420f-b231-b95c3f893b11" name="Changes" comment="Ver 0.2.0 - light code clean &#10;add: &#10;- start working on visuals">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Visuals/ControlsPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Visuals/MyFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Visuals/SwingMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/Objects/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/Objects/Maze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HronecM/com/TextToMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/1b.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1b.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/2b.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/2b.bmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +59,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="HronecM.com.Visuals" />
       <recent name="HronecM.com" />
     </key>
   </component>
@@ -82,7 +89,18 @@
       <workItem from="1661269530581" duration="340000" />
       <workItem from="1661269882976" duration="5360000" />
       <workItem from="1662975074585" duration="10096000" />
-      <workItem from="1663007021630" duration="1873000" />
+      <workItem from="1663007021630" duration="2542000" />
+      <workItem from="1663684116448" duration="7911000" />
+      <workItem from="1663769689199" duration="2188000" />
+      <workItem from="1664892067423" duration="1802000" />
+      <workItem from="1665428263645" duration="4046000" />
+      <workItem from="1665493302225" duration="2301000" />
+      <workItem from="1665567387562" duration="9698000" />
+      <workItem from="1665670867531" duration="11658000" />
+      <workItem from="1665754672955" duration="12328000" />
+      <workItem from="1665999908833" duration="1306000" />
+      <workItem from="1666101957513" duration="7673000" />
+      <workItem from="1666200746126" duration="878000" />
     </task>
     <task id="LOCAL-00001" summary="Ver 0.1 - Locate File">
       <created>1659539716457</created>
@@ -126,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663009056185</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ver 0.1.1 - rework mazes to objects with start and end point&#10;add:&#10;- start working on visual display of maze solving">
+      <created>1663009308501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663009308501</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ver 0.2.0 - light code clean &#10;add: &#10;- start working on visuals">
+      <created>1663009369081</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663009369081</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +182,8 @@
     <MESSAGE value="Ver 0.1.1 - bitmap partial solve + num select&#10;add:&#10;- rework mazes to objects with start and end point" />
     <MESSAGE value="Ver 0.1.1 - move file locating to resources&#10;add:&#10;- rework mazes to objects with start and end point" />
     <MESSAGE value="Ver 0.1.1 - rework mazes to objects with start and end point&#10;add:&#10;- start working on visual display of maze solving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.1.1 - rework mazes to objects with start and end point&#10;add:&#10;- start working on visual display of maze solving" />
+    <MESSAGE value="Ver 0.2.0 - light code clean &#10;add: &#10;- start working on visuals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver 0.2.0 - light code clean &#10;add: &#10;- start working on visuals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -160,16 +193,18 @@
           <option name="timeStamp" value="8" />
         </breakpoint>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="25" />
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="49" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="maze" />
+        <watch expression="((MazePainter)bfsP).descendantsCount" custom="HronecM.com.Visuals.MazePainter" />
+        <watch expression="((MazePainter)bfsP).prefDim" custom="HronecM.com.Visuals.MazePainter" />
       </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" line="27">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/HronecM/com/BitmapToMaze.java" line="29">
         <watch expression="rgb" />
       </inline-watch>
     </watches-manager>

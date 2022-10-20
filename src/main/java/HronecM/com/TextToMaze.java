@@ -2,7 +2,6 @@ package HronecM.com;
 
 import HronecM.com.Objects.Maze;
 
-import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,15 +26,18 @@ public class TextToMaze {
             while ((line = reader.readLine()) != null) {
                 for (tempCol = 0; tempCol < col; tempCol++) {
                     if (line.charAt(tempCol) == 'S') {
-                        Point point = new Point(tempRow, tempCol);
-                        maze.setStart(point);
+                        maze.setStart(tempCol, tempRow);
+                    } else if (line.charAt(tempCol) == 'X') {
+                        maze.setEnd(tempCol, tempRow);
                     }
                     tempMaze[tempRow][tempCol] = line.charAt(tempCol);
                 }
                 tempRow++;
             }
-            maze.setMaze(tempMaze);
+            maze.setMazeGrid(tempMaze);
+            maze.setSize(col, row);
             mazes.add(maze);
+
         }
         return mazes;
     }
